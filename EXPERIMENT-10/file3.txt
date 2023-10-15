@@ -1,0 +1,1 @@
+Node.js is an open-source, server-side JavaScript runtime environment that allows developers to run JavaScript code on the server. It was created by Ryan Dahl and first released in 2009.

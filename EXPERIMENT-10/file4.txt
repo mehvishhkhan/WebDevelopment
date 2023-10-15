@@ -1,0 +1,8 @@
+
+Asynchronous programming is a programming paradigm that allows you to perform tasks concurrently and efficiently without blocking the execution of other code.
+Key concepts and techniques in asynchronous programming include:
+
+
+1. Callbacks
+2. Promises
+3. Async/Await
