@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cake Boutique - Order Form</title>
+    <link rel="stylesheet" href="orderform.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    
+</head>
+<body class="body-style">
+    <h1 class="form-title">Place Your Cake Order</h1>
+    <form action="process_order.php" method="POST" class="order-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="cake">Select Cake:</label>
+        <select id="cake" name="cake" required>
+            <option value="">Select a Cake</option>
+            <option value="Chocolate Fudge Cake">Chocolate Fudge Cake</option>
+            <option value="Red Velvet Cake">Red Velvet Cake</option>
+            <option value="Pineapple Cake">Carrot Cake</option>
+            <option value="Vanilla Buttercream Cake">Carrot Cake</option>
+            <option value="Strawberry Cake">Carrot Cake</option>
+
+            <!-- Add more cake options as needed -->
+        </select><br><br>
+
+        <label for="delivery_date">Delivery Date:</label>
+        <input type="date" id="delivery_date" name="delivery_date" required><br><br>
+
+        <label for="delivery_address">Delivery Address:</label>
+        <textarea id="delivery_address" name="delivery_address" rows="4" required></textarea><br><br><br>
+
+        <button class="order-button">Place Order</button>
+    </form>
+</body>
+</html>

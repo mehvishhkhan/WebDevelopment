@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cake Boutique - Order Form</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        .body-style {
+            background-color: rgba(161, 110, 185, 0.737);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            background-image: url('pbg.png'); /* Add your image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Form title styles */
+        .form-title {
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            font-size: 35px;
+            padding: 20px;
+            color: rgb(71,26,92);
+        }
+
+        /* Order form styles */
+        .order-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(71, 26, 92, 0.418); /* Semi-transparent background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Form label styles */
+        .order-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ffffff;
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+        }
+
+        /* Form input styles */
+        .order-form input,
+        .order-form select,
+        .order-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Form button styles */
+        .order-button {
+            background-color: rgb(132, 54, 168);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .order-button:hover {
+            background-color: rgba(161, 110, 185, 0.737);
+        }
+
+        
+    </style>
+</head>
+<body class="body-style">
+    <h1 class="form-title">Place Your Cake Order</h1>
+    <form action="process_order.php" method="POST" class="order-form">
+        <label for="contact_number">Contact Number:</label>
+        <input type="tel" id="contact_number" name="contact_number" required><br><br>
+
+        <label for="cake">Select Cake:</label>
+        <input type="text" id="cake" name="cake" value="Pineapple Velvet Symphony Eggless Cake Eggless" readonly><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+
+        <label for="delivery_date">Delivery Date:</label>
+        <input type="date" id="delivery_date" name="delivery_date" required><br><br>
+
+        <label for="delivery_address">Delivery Address:</label>
+        <textarea id="delivery_address" name="delivery_address" rows="4" required></textarea><br><br><br>
+
+        <button class="order-button">Place Order</button>
+
+    </form>
+</body>
+</html>
