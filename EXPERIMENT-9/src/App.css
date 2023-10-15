@@ -1,0 +1,83 @@
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: rgb(115, 115, 93);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This ensures the container takes up the entire viewport height */
+  background-color: rgb(202, 228, 230);
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left; /* Align the content inside the container to the left */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(115, 115, 93);
+}
+
+/* Add this CSS to adjust the size of input fields and textarea */
+
+.small-textarea , .small_textarea{
+  width: 375px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.small-textarea{
+  height: 20px; /*for email and name*/
+}
+
+.small_textarea{
+  height: 50px; /*for message*/
+}
+
+.submit{
+  padding: 6px 9px;
+  border-radius: 15px;
+  background-color: beige;
+  border-color: beige;
+  color: rgb(100, 100, 73);
+  font-weight: bold;
+}
